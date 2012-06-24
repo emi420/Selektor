@@ -36,14 +36,6 @@
         } else if (query_type === "object") {
             el = query;
         }
-
-        // Instance properties
-        this.query = (function () {
-            return query;
-        }());
-        this.el = (function () {
-            return el;
-        }());
         
         if (el !== null) {
             $.extend($.prototype, el.constructor.prototype);
