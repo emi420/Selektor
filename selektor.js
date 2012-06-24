@@ -41,7 +41,7 @@
             $.extend($.prototype, el.constructor.prototype);
         }
         
-        $.extend({ query: query, }, el);
+        $.extend({ query: query}, el);
         
         return el;
                 
