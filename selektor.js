@@ -14,9 +14,9 @@
     
 	var $ = function (query) {
 		return new Selektor(query);
-	};
+	},
 	
-	var Selektor = function (query) {
+	Selektor = function (query) {
 		var query_type = typeof query,
 			el;
 
@@ -49,7 +49,7 @@
             $.extend($.prototype, el.constructor.prototype);
         }
         return el;
-    }
+    };
 
     // Extend function
     $.extend = function (obj, target) {
@@ -63,7 +63,7 @@
             }
         }
     };        
-       	
+    
     // Go public!
     if (!window.$ || typeof ($) !== "function") {
         window.$ = $;
