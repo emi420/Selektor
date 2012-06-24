@@ -45,8 +45,9 @@
             return el;
         }());
         
-        $.extend($.prototype, el.constructor.prototype);
-        
+        if (el !== null) {
+            $.extend($.prototype, el.constructor.prototype);
+        }
         return el;
     }
 
