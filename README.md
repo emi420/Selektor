@@ -8,8 +8,8 @@ Selektor is licensed under the terms of either the MIT License or the GNU Genera
 
 Selector:
 
-$("#myClass") - return an element 
-$(".myClass") - return an array of elements
+* $("#myClass") - return an element 
+* $(".myClass") - return an array of elements
 
 You can add your custom methods or properties, using the $.extend function:
 
