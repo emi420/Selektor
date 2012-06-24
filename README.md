@@ -23,6 +23,8 @@ You can add your custom methods or properties, using the $.extend function:
             } else {
                 this.innerHTML += " - cuack!";                    
             }
+            
+            return this;
         } 
     });
     

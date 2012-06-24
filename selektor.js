@@ -36,13 +36,20 @@
         } else if (query_type === "object") {
             el = query;
         }
-        
+
+        // Instance properties
+        $.extend(query, el.constructor.prototype);
+                
         if (el !== null) {
             $.extend($.prototype, el.constructor.prototype);
         }
+        
+        $.extend({ query: query, }, el);
+        
         return el;
+                
     };
-
+    
     // Extend function
     $.extend = function (obj, target) {
         var i;
