@@ -60,8 +60,10 @@
     };        
     
     // Go public!
-    if (!window.$ || typeof ($) !== "function") {
+    if (!window.$) {
         window.$ = $;
+    } else {
+	window.selektor = $;
     }
 
 }());
