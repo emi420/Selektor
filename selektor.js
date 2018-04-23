@@ -23,11 +23,11 @@
         // Get element from query
         if (query_type === "string") {
 
-            if (query.indexOf("#") > -1) {
+            if (query.indexOf("#") === 0) {
                 query = query.replace("#", "");
                 el = document.getElementById(query);
 
-            } else if (query.indexOf(".") > -1) {
+            } else if (query.indexOf(".") === 0) {
                 query = query.replace(".", "");
                 el = document.getElementsByClassName(query);
 
